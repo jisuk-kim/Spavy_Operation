@@ -1,0 +1,930 @@
+{
+  "updated": "2026-04-01T21:14:48.473Z",
+  "editor": "budget-editor",
+  "data": [
+    {
+      "account": "연구개발비",
+      "category": "SaaS · 구독 (AI/자동화)",
+      "items": [
+        {
+          "id": "a1",
+          "name": "ChatGPT Plus",
+          "qty": 4,
+          "unit": 30200,
+          "freq": 12,
+          "total": 1449600,
+          "note": "4인 ($20/인/월)",
+          "status": "확정"
+        },
+        {
+          "id": "a2",
+          "name": "Grok",
+          "qty": 1,
+          "unit": 44027,
+          "freq": 12,
+          "total": 528324,
+          "note": "$30/월",
+          "status": "확정"
+        },
+        {
+          "id": "a3",
+          "name": "Copilot Pro",
+          "qty": 4,
+          "unit": 15100,
+          "freq": 12,
+          "total": 724800,
+          "note": "4인 ($10/인/월)",
+          "status": "확정"
+        },
+        {
+          "id": "a4",
+          "name": "Copilot Business",
+          "qty": 2,
+          "unit": 28690,
+          "freq": 12,
+          "total": 688560,
+          "note": "2인 ($19/인/월)",
+          "status": "확정"
+        },
+        {
+          "id": "a5",
+          "name": "Claude",
+          "qty": 11,
+          "unit": 166100,
+          "freq": 12,
+          "total": 21925200,
+          "note": "11인 ($110/인/월)",
+          "status": "확정"
+        }
+      ]
+    },
+    {
+      "account": "연구개발비",
+      "category": "SaaS · 구독 (개발/엔지니어링)",
+      "items": [
+        {
+          "id": "b1",
+          "name": "GitHub (Member)",
+          "qty": 11,
+          "unit": 6040,
+          "freq": 12,
+          "total": 797280,
+          "note": "11인 ($4/인/월)",
+          "status": "확정"
+        },
+        {
+          "id": "b2",
+          "name": "GitHub (기타 결제)",
+          "qty": 1,
+          "unit": 128363,
+          "freq": 12,
+          "total": 1540356,
+          "note": "확인 필요",
+          "status": "확정"
+        },
+        {
+          "id": "b3",
+          "name": "HOOPS",
+          "qty": 1,
+          "unit": 31710000,
+          "freq": 4,
+          "total": 126840000,
+          "note": "분기별 파트너+로열티",
+          "status": "확정"
+        },
+        {
+          "id": "b4",
+          "name": "ODA",
+          "qty": 1,
+          "unit": 30200000,
+          "freq": 1,
+          "total": 30200000,
+          "note": "연간 라이선스",
+          "status": "확정"
+        },
+        {
+          "id": "b5",
+          "name": "ACIS",
+          "qty": 1,
+          "unit": 39260000,
+          "freq": 1,
+          "total": 39260000,
+          "note": "연간 라이선스",
+          "status": "확정"
+        },
+        {
+          "id": "b6",
+          "name": "AG-Grid",
+          "qty": 1,
+          "unit": 36173560,
+          "freq": 1,
+          "total": 36173560,
+          "note": "Renew 검토(5월~)",
+          "status": "확정"
+        },
+        {
+          "id": "b7",
+          "name": "Visual Studio 라이선스",
+          "qty": 11,
+          "unit": 240000,
+          "freq": 1,
+          "total": 2640000,
+          "note": "Pro 기준, 현재 무료판(위반)",
+          "status": "보완"
+        }
+      ]
+    },
+    {
+      "account": "지급수수료",
+      "category": "클라우드 · 인프라",
+      "items": [
+        {
+          "id": "c1",
+          "name": "AWS",
+          "qty": 1,
+          "unit": 400000,
+          "freq": 12,
+          "total": 4800000,
+          "note": "월 사용량 기반",
+          "status": "확정"
+        },
+        {
+          "id": "c2",
+          "name": "ZeroTier",
+          "qty": 1,
+          "unit": 31111,
+          "freq": 12,
+          "total": 373332,
+          "note": "VPN",
+          "status": "확정"
+        },
+        {
+          "id": "c3",
+          "name": "보안 솔루션 (EDR)",
+          "qty": 11,
+          "unit": 15000,
+          "freq": 12,
+          "total": 1980000,
+          "note": "엔드포인트 보안",
+          "status": "보완"
+        },
+        {
+          "id": "c4",
+          "name": "백업 서비스",
+          "qty": 1,
+          "unit": 150000,
+          "freq": 12,
+          "total": 1800000,
+          "note": "클라우드 백업/DR",
+          "status": "보완"
+        },
+        {
+          "id": "c5",
+          "name": "도메인/SSL 인증서",
+          "qty": 1,
+          "unit": 500000,
+          "freq": 1,
+          "total": 500000,
+          "note": "연간 갱신",
+          "status": "신규"
+        }
+      ]
+    },
+    {
+      "account": "지급수수료",
+      "category": "CRM · 영업",
+      "items": [
+        {
+          "id": "d1",
+          "name": "Pipedrive",
+          "qty": 1,
+          "unit": 524876,
+          "freq": 12,
+          "total": 6298512,
+          "note": "$316/월 (3명)",
+          "status": "확정"
+        },
+        {
+          "id": "d2",
+          "name": "Salesmap",
+          "qty": 1,
+          "unit": 724630,
+          "freq": 12,
+          "total": 8695560,
+          "note": "관리자2/Watcher3",
+          "status": "확정"
+        }
+      ]
+    },
+    {
+      "account": "지급수수료",
+      "category": "협업 · 문서",
+      "items": [
+        {
+          "id": "e1",
+          "name": "Notion (Business)",
+          "qty": 1,
+          "unit": 40000,
+          "freq": 12,
+          "total": 480000,
+          "note": "$26/월",
+          "status": "확정"
+        },
+        {
+          "id": "e2",
+          "name": "Google Workspace",
+          "qty": 1,
+          "unit": 2000000,
+          "freq": 12,
+          "total": 24000000,
+          "note": "12Seat+AI Ultra",
+          "status": "확정"
+        },
+        {
+          "id": "e3",
+          "name": "Calendly",
+          "qty": 1,
+          "unit": 181200,
+          "freq": 1,
+          "total": 181200,
+          "note": "3인, 10월 갱신",
+          "status": "확정"
+        },
+        {
+          "id": "e4",
+          "name": "GitBook",
+          "qty": 1,
+          "unit": 1395240,
+          "freq": 1,
+          "total": 1395240,
+          "note": "$924/년",
+          "status": "확정"
+        },
+        {
+          "id": "e5",
+          "name": "MS Office",
+          "qty": 12,
+          "unit": 15100,
+          "freq": 1,
+          "total": 181200,
+          "note": "12인",
+          "status": "확정"
+        }
+      ]
+    },
+    {
+      "account": "광고선전비",
+      "category": "웹 · 콘텐츠 · 마케팅",
+      "items": [
+        {
+          "id": "f1",
+          "name": "아임웹",
+          "qty": 1,
+          "unit": 528000,
+          "freq": 1,
+          "total": 528000,
+          "note": "26년 갱신X",
+          "status": "확정"
+        },
+        {
+          "id": "f2",
+          "name": "Snagit",
+          "qty": 1,
+          "unit": 156354,
+          "freq": 1,
+          "total": 156354,
+          "note": "$105.6/년",
+          "status": "확정"
+        },
+        {
+          "id": "f3",
+          "name": "브로슈어 인쇄",
+          "qty": 1,
+          "unit": 200000,
+          "freq": 2,
+          "total": 400000,
+          "note": "300부×2회",
+          "status": "확정"
+        },
+        {
+          "id": "f4",
+          "name": "디자인 외주",
+          "qty": 1,
+          "unit": 700000,
+          "freq": 3,
+          "total": 2100000,
+          "note": "홍보물",
+          "status": "확정"
+        },
+        {
+          "id": "f5",
+          "name": "온라인 광고비",
+          "qty": 1,
+          "unit": 500000,
+          "freq": 12,
+          "total": 6000000,
+          "note": "Google Ads/LinkedIn",
+          "status": "신규"
+        },
+        {
+          "id": "f6",
+          "name": "홍보 영상 제작",
+          "qty": 1,
+          "unit": 5000000,
+          "freq": 1,
+          "total": 5000000,
+          "note": "제품 데모 영상",
+          "status": "신규"
+        }
+      ]
+    },
+    {
+      "account": "여비교통비",
+      "category": "국내 출장",
+      "items": [
+        {
+          "id": "g1",
+          "name": "KTX/SRT + 현지교통",
+          "qty": 1,
+          "unit": "250000",
+          "freq": "50",
+          "total": 12500000,
+          "note": "당일, 숙박 출장 평균가격*50회",
+          "status": "확정"
+        }
+      ]
+    },
+    {
+      "account": "여비교통비",
+      "category": "해외 출장",
+      "items": [
+        {
+          "id": "h1",
+          "name": "미주/유럽 출장",
+          "qty": "2",
+          "unit": 6450000,
+          "freq": "3",
+          "total": 38700000,
+          "note": "1주/2인×3회",
+          "status": "확정"
+        },
+        {
+          "id": "h2",
+          "name": "아시아 출장",
+          "qty": "3",
+          "unit": 2950000,
+          "freq": "4",
+          "total": 35400000,
+          "note": "1주/3인×3-4회",
+          "status": "확정"
+        }
+      ]
+    },
+    {
+      "account": "광고선전비",
+      "category": "전시회 · 컨퍼런스",
+      "items": [
+        {
+          "id": "i1",
+          "name": "국내 전시 참가",
+          "qty": 1,
+          "unit": 10225000,
+          "freq": 1,
+          "total": 10225000,
+          "note": "2부스+장비+3인",
+          "status": "확정"
+        },
+        {
+          "id": "i2",
+          "name": "해외 전시 참가",
+          "qty": 1,
+          "unit": 46625000,
+          "freq": 1,
+          "total": 46625000,
+          "note": "미/유럽, 2인",
+          "status": "확정"
+        },
+        {
+          "id": "i3",
+          "name": "판촉물",
+          "qty": 1,
+          "unit": 2000000,
+          "freq": 1,
+          "total": 2000000,
+          "note": "전시회용",
+          "status": "확정"
+        }
+      ]
+    },
+    {
+      "account": "감가상각비",
+      "category": "장비 · 연구환경",
+      "items": [
+        {
+          "id": "j1",
+          "name": "노트북/PC 교체",
+          "qty": 3,
+          "unit": 3000000,
+          "freq": 1,
+          "total": 9000000,
+          "note": "연 3대",
+          "status": "보완"
+        },
+        {
+          "id": "j2",
+          "name": "모니터",
+          "qty": 3,
+          "unit": 600000,
+          "freq": 1,
+          "total": 1800000,
+          "note": "27\" QHD/4K",
+          "status": "보완"
+        },
+        {
+          "id": "j3",
+          "name": "주변기기",
+          "qty": 11,
+          "unit": 250000,
+          "freq": 1,
+          "total": 2750000,
+          "note": "키보드/마우스/허브",
+          "status": "보완"
+        },
+        {
+          "id": "j4",
+          "name": "테스트 디바이스",
+          "qty": "1",
+          "unit": "10000000",
+          "freq": 1,
+          "total": 10000000,
+          "note": "태블릿/모바일/카메라 등",
+          "status": "보완"
+        },
+        {
+          "id": "j5",
+          "name": "서버/네트워크 장비",
+          "qty": 1,
+          "unit": 5000000,
+          "freq": 1,
+          "total": 5000000,
+          "note": "필요 시",
+          "status": "보완"
+        }
+      ]
+    },
+    {
+      "account": "지급수수료",
+      "category": "외주 · 전문서비스",
+      "items": [
+        {
+          "id": "k1",
+          "name": "개발 외주",
+          "qty": 1,
+          "unit": "30000000",
+          "freq": 1,
+          "total": 30000000,
+          "note": "연간 예비",
+          "status": "보완"
+        },
+        {
+          "id": "k2",
+          "name": "법무 자문",
+          "qty": 1,
+          "unit": 1500000,
+          "freq": 12,
+          "total": 18000000,
+          "note": "월 150만",
+          "status": "확정"
+        },
+        {
+          "id": "k3",
+          "name": "특허 출원",
+          "qty": 2,
+          "unit": 4000000,
+          "freq": 1,
+          "total": 8000000,
+          "note": "건당 400만",
+          "status": "확정"
+        },
+        {
+          "id": "k4",
+          "name": "상표 등록",
+          "qty": 1,
+          "unit": 2000000,
+          "freq": 1,
+          "total": 2000000,
+          "note": "건당 200만",
+          "status": "확정"
+        }
+      ]
+    },
+    {
+      "account": "교육훈련비",
+      "category": "교육 · 성장",
+      "items": [
+        {
+          "id": "l1",
+          "name": "온라인 강의 구독",
+          "qty": 1,
+          "unit": 4000000,
+          "freq": 1,
+          "total": 4000000,
+          "note": "직원 교육비 등",
+          "status": "보완"
+        },
+        {
+          "id": "l2",
+          "name": "컨퍼런스/세미나",
+          "qty": 5,
+          "unit": 300000,
+          "freq": 2,
+          "total": 3000000,
+          "note": "5인×2회",
+          "status": "보완"
+        }
+      ]
+    },
+    {
+      "account": "도서인쇄비",
+      "category": "도서 · 데이터",
+      "items": [
+        {
+          "id": "l4",
+          "name": "도서 구매",
+          "qty": 11,
+          "unit": 250000,
+          "freq": 1,
+          "total": 2750000,
+          "note": "인당 25만/연",
+          "status": "보완"
+        },
+        {
+          "id": "l5",
+          "name": "데이터 구매",
+          "qty": 1,
+          "unit": 5000000,
+          "freq": 1,
+          "total": 5000000,
+          "note": "지도/포인트클라우드/3D모델/디자인",
+          "status": "보완"
+        }
+      ]
+    },
+    {
+      "account": "복리후생비",
+      "category": "내부 운영 · 복리후생",
+      "items": [
+        {
+          "id": "m1",
+          "name": "워크숍",
+          "qty": 1,
+          "unit": "5000000",
+          "freq": 3,
+          "total": 15000000,
+          "note": "2박3일×3회",
+          "status": "보완"
+        },
+        {
+          "id": "m2",
+          "name": "팀 회식",
+          "qty": 1,
+          "unit": 700000,
+          "freq": 12,
+          "total": 8400000,
+          "note": "월 1회",
+          "status": "보완"
+        },
+        {
+          "id": "m3",
+          "name": "간식/커피",
+          "qty": 1,
+          "unit": 400000,
+          "freq": 12,
+          "total": 4800000,
+          "note": "월 40만",
+          "status": "보완"
+        },
+        {
+          "id": "m4",
+          "name": "경조사비",
+          "qty": 1,
+          "unit": "300000",
+          "freq": 6,
+          "total": 1800000,
+          "note": "연 6건",
+          "status": "신규"
+        },
+        {
+          "id": "m5",
+          "name": "건강검진(법정 외)",
+          "qty": "12",
+          "unit": 150000,
+          "freq": 1,
+          "total": 1800000,
+          "note": "종합검진 보조",
+          "status": "신규"
+        },
+        {
+          "id": "m6",
+          "name": "체육/문화 복지",
+          "qty": "12",
+          "unit": "150000",
+          "freq": 12,
+          "total": 21600000,
+          "note": "인당 월 10만",
+          "status": "신규"
+        }
+      ]
+    },
+    {
+      "account": "접대비",
+      "category": "접대비",
+      "items": [
+        {
+          "id": "m7",
+          "name": "거래처 접대",
+          "qty": 1,
+          "unit": 500000,
+          "freq": 12,
+          "total": 6000000,
+          "note": "월 50만",
+          "status": "신규"
+        },
+        {
+          "id": "m8",
+          "name": "명절 선물",
+          "qty": 1,
+          "unit": 2000000,
+          "freq": 2,
+          "total": 4000000,
+          "note": "설/추석",
+          "status": "신규"
+        }
+      ]
+    },
+    {
+      "account": "소모품비",
+      "category": "사무용품 · 소모품",
+      "items": [
+        {
+          "id": "n1",
+          "name": "사무용품",
+          "qty": 1,
+          "unit": 150000,
+          "freq": 12,
+          "total": 1800000,
+          "note": "월 15만",
+          "status": "보완"
+        }
+      ]
+    },
+    {
+      "account": "통신비",
+      "category": "통신비",
+      "items": [
+        {
+          "id": "n2",
+          "name": "인터넷 회선",
+          "qty": 1,
+          "unit": "300000",
+          "freq": 12,
+          "total": 3600000,
+          "note": "전용선",
+          "status": "보완"
+        },
+        {
+          "id": "n3",
+          "name": "법인 휴대폰",
+          "qty": 3,
+          "unit": 80000,
+          "freq": 12,
+          "total": 2880000,
+          "note": "3회선",
+          "status": "신규"
+        }
+      ]
+    },
+    {
+      "account": "차량유지비",
+      "category": "차량 · 운송",
+      "items": [
+        {
+          "id": "o1",
+          "name": "차량 리스",
+          "qty": 1,
+          "unit": 500000,
+          "freq": 12,
+          "total": 6000000,
+          "note": "1대 월 50만",
+          "status": "보완"
+        },
+        {
+          "id": "o2",
+          "name": "유류비/보험/정비",
+          "qty": 1,
+          "unit": 350000,
+          "freq": 12,
+          "total": 4200000,
+          "note": "월 35만",
+          "status": "보완"
+        }
+      ]
+    },
+    {
+      "account": "보험료",
+      "category": "보험",
+      "items": [
+        {
+          "id": "p1",
+          "name": "영업배상책임보험",
+          "qty": 1,
+          "unit": 3000000,
+          "freq": 1,
+          "total": 3000000,
+          "note": "제품/서비스 배상",
+          "status": "신규"
+        },
+        {
+          "id": "p2",
+          "name": "재산종합보험",
+          "qty": 1,
+          "unit": 1500000,
+          "freq": 1,
+          "total": 1500000,
+          "note": "장비/사무실",
+          "status": "신규"
+        },
+        {
+          "id": "p3",
+          "name": "D&O 보험",
+          "qty": 1,
+          "unit": 2000000,
+          "freq": 1,
+          "total": 2000000,
+          "note": "분사 시 필요",
+          "status": "신규"
+        }
+      ]
+    },
+    {
+      "account": "세금과공과",
+      "category": "세금 · 공과금",
+      "items": [
+        {
+          "id": "q1",
+          "name": "사업자 등록/인허가",
+          "qty": 1,
+          "unit": 500000,
+          "freq": 1,
+          "total": 500000,
+          "note": "분사 초기",
+          "status": "신규"
+        },
+        {
+          "id": "q2",
+          "name": "공과금(면허세 등)",
+          "qty": 1,
+          "unit": 200000,
+          "freq": 12,
+          "total": 2400000,
+          "note": "월 20만",
+          "status": "신규"
+        },
+        {
+          "id": "q3",
+          "name": "SW 인증/심사",
+          "qty": 1,
+          "unit": 3000000,
+          "freq": 1,
+          "total": 3000000,
+          "note": "GS인증, ISO 등",
+          "status": "신규"
+        }
+      ]
+    },
+    {
+      "account": "수선비",
+      "category": "수선 · 유지보수",
+      "items": [
+        {
+          "id": "r1",
+          "name": "장비 수리/유지보수",
+          "qty": 1,
+          "unit": 200000,
+          "freq": 12,
+          "total": 2400000,
+          "note": "PC/네트워크 등",
+          "status": "신규"
+        },
+        {
+          "id": "r2",
+          "name": "사무실 시설 수선",
+          "qty": 1,
+          "unit": 1000000,
+          "freq": 2,
+          "total": 2000000,
+          "note": "연 2회",
+          "status": "신규"
+        }
+      ]
+    },
+    {
+      "account": "지급수수료",
+      "category": "금융 · 수수료",
+      "items": [
+        {
+          "id": "s1",
+          "name": "카드/송금 수수료",
+          "qty": 1,
+          "unit": 100000,
+          "freq": 12,
+          "total": 1200000,
+          "note": "해외 결제",
+          "status": "신규"
+        },
+        {
+          "id": "s2",
+          "name": "해외송금 수수료",
+          "qty": 1,
+          "unit": 50000,
+          "freq": 12,
+          "total": 600000,
+          "note": "라이선스 결제",
+          "status": "신규"
+        }
+      ]
+    },
+    {
+      "account": "무형자산상각비",
+      "category": "무형자산 상각",
+      "items": [
+        {
+          "id": "t1",
+          "name": "SW 라이선스 상각",
+          "qty": 1,
+          "unit": 10000000,
+          "freq": 1,
+          "total": 10000000,
+          "note": "ODA/ACIS/AG-Grid 상각분",
+          "status": "신규"
+        }
+      ]
+    },
+    {
+      "account": "잡비",
+      "category": "예비비 · 잡비",
+      "items": [
+        {
+          "id": "u1",
+          "name": "긴급 출장",
+          "qty": 1,
+          "unit": 3000000,
+          "freq": 1,
+          "total": 3000000,
+          "note": "돌발 대비",
+          "status": "보완"
+        },
+        {
+          "id": "u2",
+          "name": "예상 외 외주",
+          "qty": 1,
+          "unit": 5000000,
+          "freq": 1,
+          "total": 5000000,
+          "note": "긴급 개발",
+          "status": "보완"
+        },
+        {
+          "id": "u3",
+          "name": "시스템 장애 대응",
+          "qty": 1,
+          "unit": 3000000,
+          "freq": 1,
+          "total": 3000000,
+          "note": "인프라 복구",
+          "status": "보완"
+        },
+        {
+          "id": "u4",
+          "name": "환율 변동 대응",
+          "qty": 1,
+          "unit": 8000000,
+          "freq": 1,
+          "total": 8000000,
+          "note": "달러 구독 변동분",
+          "status": "보완"
+        },
+        {
+          "id": "u5",
+          "name": "기타 위약금 등",
+          "qty": 1,
+          "unit": 3000000,
+          "freq": 1,
+          "total": 3000000,
+          "note": "리스크 대비",
+          "status": "보완"
+        }
+      ]
+    }
+  ]
+}
