@@ -9,34 +9,27 @@
   :root { --bg:#ffffff; --fg:#1e293b; --muted:#64748b; --border:#e2e8f0; --card:#f8fafc; --hover:#f1f5f9; }
   * { box-sizing:border-box; margin:0; padding:0; }
   body { font-family:'Pretendard','Malgun Gothic',-apple-system,sans-serif; color:var(--fg); background:var(--bg); padding:20px; max-width:1280px; margin:0 auto; font-size:14px; line-height:1.5; }
-
-  /* Header */
   .header { display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:12px; margin-bottom:20px; }
   .header h1 { font-size:22px; font-weight:700; }
   .header .sub { color:var(--muted); font-size:13px; margin-top:4px; }
   .toolbar { display:flex; gap:8px; flex-wrap:wrap; }
   .toolbar button { padding:10px 18px; border:none; border-radius:8px; font-size:13px; font-weight:600; cursor:pointer; display:flex; align-items:center; gap:6px; }
+  .btn-publish { background:#dc2626; color:#fff; }
   .btn-excel { background:#16a34a; color:#fff; }
   .btn-pdf { background:#2563eb; color:#fff; }
   .btn-import { background:#8b5cf6; color:#fff; }
   .btn-save { background:#f97316; color:#fff; }
-
-  /* Filter cards */
   .filters { display:flex; gap:10px; margin-bottom:16px; flex-wrap:wrap; }
   .fcard { padding:10px 16px; border-radius:10px; cursor:pointer; text-align:left; min-width:150px; border:2px solid transparent; transition:all .15s; }
   .fcard.active { border-color:currentColor; }
   .fcard .fl { font-size:11px; font-weight:600; }
   .fcard .fv { font-size:17px; font-weight:700; margin-top:2px; font-variant-numeric:tabular-nums; }
-
-  /* Account summary */
   details { margin-bottom:16px; border:1px solid var(--border); border-radius:10px; overflow:hidden; }
   summary { padding:10px 16px; cursor:pointer; background:var(--card); font-weight:700; font-size:14px; }
   .acc-grid { padding:12px; display:flex; flex-wrap:wrap; gap:8px; }
   .acc-box { background:var(--card); border-radius:8px; padding:8px 14px; min-width:180px; border:1px solid var(--border); }
   .acc-box .al { font-size:11px; color:var(--muted); }
   .acc-box .av { font-size:15px; font-weight:700; font-variant-numeric:tabular-nums; }
-
-  /* Group */
   .group { margin-bottom:10px; border:1px solid var(--border); border-radius:10px; overflow:hidden; }
   .group-head { display:flex; align-items:center; justify-content:space-between; padding:10px 16px; cursor:pointer; background:var(--card); }
   .group-head .left { display:flex; align-items:center; gap:8px; flex-wrap:wrap; flex:1; }
@@ -49,8 +42,6 @@
   .group-head .del-grp { background:none; border:none; cursor:pointer; font-size:14px; color:#cbd5e1; padding:2px 6px; }
   .group-head .arrow { font-size:10px; color:var(--muted); transition:transform .2s; }
   .group-head .arrow.collapsed { transform:rotate(-90deg); }
-
-  /* Table */
   .gtable { width:100%; border-collapse:collapse; font-size:13px; }
   .gtable th { background:var(--card); font-weight:600; color:var(--muted); font-size:12px; padding:7px 10px; text-align:left; }
   .gtable th.r { text-align:right; }
@@ -60,31 +51,18 @@
   .gtable td.c { text-align:center; }
   .gtable td.fw { font-weight:600; }
   .gtable tr.editing { background:#fffbeb; }
-
-  /* Badge */
   .badge { font-size:11px; font-weight:600; padding:2px 8px; border-radius:99px; display:inline-block; }
   .badge-확정 { background:#dbeafe; color:#1e40af; }
   .badge-보완 { background:#fef3c7; color:#92400e; }
   .badge-신규 { background:#dcfce7; color:#166534; }
-
-  /* Buttons */
   .btn-sm { background:var(--hover); color:var(--fg); border:none; border-radius:6px; padding:5px 12px; font-size:12px; font-weight:600; cursor:pointer; }
   .btn-sm.blue { background:#dbeafe; color:#1e40af; }
   .btn-sm.red { background:#fee2e2; color:#b91c1c; }
-  .btn-sm.green { background:#dcfce7; color:#166534; }
-
-  /* Input */
   .inp { border:1px solid #d1d5db; border-radius:6px; padding:4px 8px; font-size:13px; font-family:inherit; }
-
-  /* Add row */
   .add-row { padding:12px; background:#fefce8; border-top:1px solid var(--border); display:flex; gap:8px; flex-wrap:wrap; align-items:center; }
   .add-bar { padding:8px 16px; border-top:1px solid #f1f5f9; }
-
-  /* Add group */
   .add-grp { margin:12px 0 20px; border:1px dashed var(--muted); border-radius:10px; padding:16px; display:flex; gap:10px; flex-wrap:wrap; align-items:center; }
   .add-grp-btn { background:var(--card); color:var(--fg); border:1px dashed var(--muted); border-radius:10px; width:100%; padding:12px; font-size:13px; font-weight:600; cursor:pointer; margin:12px 0 20px; }
-
-  /* Grand total */
   .grand { padding:20px; background:var(--card); border-radius:12px; border:1px solid var(--border); }
   .grand .row { display:flex; justify-content:space-between; margin-bottom:6px; }
   .grand .row .l { font-size:13px; color:var(--muted); }
@@ -92,30 +70,23 @@
   .grand .total-row { border-top:2px solid var(--fg); padding-top:12px; margin-top:8px; display:flex; justify-content:space-between; }
   .grand .total-row .l { font-size:15px; font-weight:700; }
   .grand .total-row .v { font-size:22px; font-weight:800; font-variant-numeric:tabular-nums; }
-
   .footer { margin-top:12px; font-size:11px; color:var(--muted); line-height:1.6; }
-
-  /* Toast */
   .toast { position:fixed; bottom:24px; right:24px; background:#334155; color:#fff; padding:12px 20px; border-radius:10px; font-size:13px; font-weight:600; opacity:0; transition:opacity .3s; z-index:999; pointer-events:none; }
   .toast.show { opacity:1; }
-
-  @media(max-width:768px) {
-    body { padding:12px; }
-    .gtable { font-size:12px; min-width:780px; }
-    .header { flex-direction:column; }
-  }
-  @media print { .toolbar, .filters, .add-bar, .add-grp-btn, .btn-sm, .del-grp { display:none!important; } }
+  .publish-bar { background:#fef2f2; border:1px solid #fca5a5; border-radius:10px; padding:14px 20px; margin-bottom:16px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; }
+  .publish-bar .msg { color:#991b1b; font-size:13px; font-weight:600; }
+  .publish-bar .info { color:#b91c1c; font-size:12px; }
+  .synced-bar { background:#f0fdf4; border:1px solid #86efac; border-radius:10px; padding:14px 20px; margin-bottom:16px; }
+  .synced-bar .msg { color:#166534; font-size:13px; font-weight:600; }
+  .synced-bar .info { color:#15803d; font-size:12px; }
+  @media(max-width:768px) { body{padding:12px} .gtable{font-size:12px;min-width:780px} .header{flex-direction:column} }
+  @media print { .toolbar,.filters,.add-bar,.add-grp-btn,.btn-sm,.del-grp,.publish-bar,.synced-bar{display:none!important} }
 </style>
 </head>
 <body>
-
 <div id="app"></div>
 <div class="toast" id="toast"></div>
-
 <script>
-// ═══════════════════════════════════════════════════
-// DATA — 이 부분을 수정하면 초기 데이터가 바뀝니다
-// ═══════════════════════════════════════════════════
 const ACCOUNT_MAP = {
   "여비교통비":{code:"8110",color:"#f97316"},"접대비":{code:"8120",color:"#ef4444"},
   "통신비":{code:"8130",color:"#0ea5e9"},"세금과공과":{code:"8150",color:"#64748b"},
@@ -129,7 +100,8 @@ const ACCOUNT_MAP = {
 };
 const ACCOUNTS = Object.keys(ACCOUNT_MAP);
 
-const INIT_DATA = [
+// 기본 내장 데이터 (data.json이 없을 때 사용)
+const DEFAULT_DATA = [
   {account:"연구개발비",category:"SaaS · 구독 (AI/자동화)",items:[
     {id:"a1",name:"ChatGPT Plus",qty:4,unit:30200,freq:12,total:1449600,note:"4인 ($20/인/월)",status:"확정"},
     {id:"a2",name:"Grok",qty:1,unit:44027,freq:12,total:528324,note:"$30/월",status:"확정"},
@@ -262,67 +234,101 @@ const INIT_DATA = [
   ]},
 ];
 
-// ═══════════════════════════════════════════════════
-// APP STATE
-// ═══════════════════════════════════════════════════
-const STORAGE_KEY = "budget_data_2026";
-let data = loadData();
+// ═══════════════════════════════════════
+// STATE
+// ═══════════════════════════════════════
+let data = [];
+let publishedData = null;
 let filter = "all";
 let collapsed = {};
 let editingId = null;
 let addingAt = null;
 let nid = 9000;
+let hasLocalChanges = false;
+let lastPublished = null;
 
-function loadData() {
+const STORAGE_KEY = "budget_local_2026";
+
+function loadLocal() {
+  try { const s = localStorage.getItem(STORAGE_KEY); return s ? JSON.parse(s) : null; } catch { return null; }
+}
+function saveLocal() {
+  try { localStorage.setItem(STORAGE_KEY, JSON.stringify({ data, ts: Date.now() })); } catch {}
+}
+
+// data.json 로드 시도 → 없으면 기본 데이터
+async function init() {
+  let published = null;
   try {
-    const s = localStorage.getItem(STORAGE_KEY);
-    return s ? JSON.parse(s) : JSON.parse(JSON.stringify(INIT_DATA));
-  } catch { return JSON.parse(JSON.stringify(INIT_DATA)); }
-}
-function saveData() {
-  try { localStorage.setItem(STORAGE_KEY, JSON.stringify(data)); } catch {}
+    const r = await fetch("data.json?t=" + Date.now());
+    if (r.ok) { published = await r.json(); publishedData = JSON.parse(JSON.stringify(published.data)); lastPublished = published.updated; }
+  } catch {}
+
+  const local = loadLocal();
+
+  if (published && local && local.ts > new Date(published.updated).getTime()) {
+    data = local.data;
+    hasLocalChanges = true;
+  } else if (published) {
+    data = published.data;
+    hasLocalChanges = false;
+  } else if (local) {
+    data = local.data;
+    hasLocalChanges = true;
+  } else {
+    data = JSON.parse(JSON.stringify(DEFAULT_DATA));
+    hasLocalChanges = false;
+  }
+  render();
 }
 
-// ═══════════════════════════════════════════════════
-// HELPERS
-// ═══════════════════════════════════════════════════
 const fmt = n => "₩" + Number(n).toLocaleString("ko-KR");
 const sumBy = st => data.reduce((s,g) => s + g.items.filter(i => st==="all" || i.status===st).reduce((a,i)=>a+Number(i.total),0),0);
 const toast = msg => { const t=document.getElementById("toast"); t.textContent=msg; t.classList.add("show"); setTimeout(()=>t.classList.remove("show"),2500); };
+function esc(s) { return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;"); }
 
-// ═══════════════════════════════════════════════════
+// ═══════════════════════════════════════
+// PUBLISH — data.json 다운로드
+// ═══════════════════════════════════════
+function publish() {
+  const payload = { updated: new Date().toISOString(), editor: "budget-editor", data: data };
+  const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
+  const a = document.createElement("a"); a.href = URL.createObjectURL(blob);
+  a.download = "data.json"; a.click(); URL.revokeObjectURL(a.href);
+  hasLocalChanges = false; saveLocal();
+  toast("data.json 다운로드 완료 → biz-team 폴더에 넣고 git push 하세요");
+  render();
+}
+
+// ═══════════════════════════════════════
 // RENDER
-// ═══════════════════════════════════════════════════
+// ═══════════════════════════════════════
 function render() {
   const filtered = filter==="all" ? data : data.map(g=>({...g,items:g.items.filter(i=>i.status===filter)})).filter(g=>g.items.length>0);
   const byAcc = {};
   data.forEach(g => { if(!byAcc[g.account]) byAcc[g.account]=0; g.items.forEach(i=>{byAcc[g.account]+=Number(i.total);}); });
 
-  let h = `
-  <div class="header">
-    <div>
-      <h1>기술연구소 연간 운영 예산(안)</h1>
-      <div class="sub">11인 기준 · K-GAAP 계정과목 매핑 · 인건비/임대료/회계 제외 · 2026년</div>
-    </div>
-    <div class="toolbar">
-      <button class="btn-import" onclick="importExcel()">📂 Excel 가져오기</button>
-      <button class="btn-excel" onclick="exportExcel()">📥 Excel 다운로드</button>
-      <button class="btn-pdf" onclick="exportPDF()">📄 PDF 내보내기</button>
-      <button class="btn-save" onclick="resetData()">🔄 초기화</button>
-    </div>
-  </div>`;
+  let h = `<div class="header"><div>
+    <h1>기술연구소 연간 운영 예산(안)</h1>
+    <div class="sub">11인 기준 · K-GAAP 계정과목 매핑 · 인건비/임대료/회계 제외 · 2026년</div>
+  </div><div class="toolbar">
+    <button class="btn-publish" onclick="publish()">🚀 발행 (Publish)</button>
+    <button class="btn-excel" onclick="exportExcel()">📥 Excel</button>
+    <button class="btn-pdf" onclick="exportPDF()">📄 PDF</button>
+    <button class="btn-save" onclick="resetData()">🔄 초기화</button>
+  </div></div>`;
+
+  // 발행 상태 바
+  if (hasLocalChanges) {
+    h += `<div class="publish-bar"><div><div class="msg">⚠️ 아직 발행되지 않은 수정사항이 있습니다</div><div class="info">[🚀 발행] 버튼을 눌러 팀에 공유하세요 (data.json 다운로드 → git push)</div></div></div>`;
+  } else if (lastPublished) {
+    h += `<div class="synced-bar"><div class="msg">✅ 최신 발행 데이터 (${new Date(lastPublished).toLocaleString("ko-KR")})</div><div class="info">모든 팀원이 동일한 데이터를 보고 있습니다</div></div>`;
+  }
 
   // Filter cards
-  const cards = [
-    {l:"전체",v:"all",bg:"#f1f5f9",fg:"#334155"},
-    {l:"확정",v:"확정",bg:"#dbeafe",fg:"#1e40af"},
-    {l:"보완",v:"보완",bg:"#fef3c7",fg:"#92400e"},
-    {l:"신규 추가",v:"신규",bg:"#dcfce7",fg:"#166534"},
-  ];
-  h += `<div class="filters">`;
-  cards.forEach(c => {
-    h += `<div class="fcard ${filter===c.v?'active':''}" style="background:${c.bg};color:${c.fg}" onclick="setFilter('${c.v}')">
-      <div class="fl">${c.l}</div><div class="fv">${fmt(sumBy(c.v))}</div></div>`;
+  [{l:"전체",v:"all",bg:"#f1f5f9",fg:"#334155"},{l:"확정",v:"확정",bg:"#dbeafe",fg:"#1e40af"},{l:"보완",v:"보완",bg:"#fef3c7",fg:"#92400e"},{l:"신규",v:"신규",bg:"#dcfce7",fg:"#166534"}].forEach(c => {
+    if (!h.includes('class="filters"')) h += `<div class="filters">`;
+    h += `<div class="fcard ${filter===c.v?'active':''}" style="background:${c.bg};color:${c.fg}" onclick="setFilter('${c.v}')"><div class="fl">${c.l}</div><div class="fv">${fmt(sumBy(c.v))}</div></div>`;
   });
   h += `</div>`;
 
@@ -339,70 +345,20 @@ function render() {
     const gT = group.items.reduce((a,i)=>a+Number(i.total),0);
     const ac = ACCOUNT_MAP[group.account]||{code:"",color:"#64748b"};
     const isC = collapsed[fIdx];
-
-    h += `<div class="group"><div class="group-head">
-      <div class="left" onclick="toggleGroup(${fIdx})">
-        <div class="dot" style="background:${ac.color}"></div>
-        <span class="gname">${group.category}</span>
-        <span class="gtag">${ac.code} ${group.account}</span>
-        <span class="gcnt">${group.items.length}건</span>
-      </div>
-      <div class="right">
-        <span class="gtotal">${fmt(gT)}</span>
-        <button class="del-grp" onclick="delGroup(${gI})" title="그룹 삭제">✕</button>
-        <span class="arrow ${isC?'collapsed':''}" onclick="toggleGroup(${fIdx})">▼</span>
-      </div>
-    </div>`;
-
+    h += `<div class="group"><div class="group-head"><div class="left" onclick="toggleGroup(${fIdx})"><div class="dot" style="background:${ac.color}"></div><span class="gname">${esc(group.category)}</span><span class="gtag">${ac.code} ${group.account}</span><span class="gcnt">${group.items.length}건</span></div><div class="right"><span class="gtotal">${fmt(gT)}</span><button class="del-grp" onclick="delGroup(${gI})" title="삭제">✕</button><span class="arrow ${isC?'collapsed':''}" onclick="toggleGroup(${fIdx})">▼</span></div></div>`;
     if (!isC) {
-      h += `<div style="overflow-x:auto"><table class="gtable"><thead><tr>
-        <th style="width:22%">항목</th><th class="r" style="width:6%">수량</th>
-        <th class="r" style="width:12%">단가</th><th class="r" style="width:6%">회수</th>
-        <th class="r" style="width:14%">연간 합계</th><th style="width:20%">비고</th>
-        <th class="c" style="width:7%">구분</th><th class="c" style="width:13%"></th>
-      </tr></thead><tbody>`;
-
+      h += `<div style="overflow-x:auto"><table class="gtable"><thead><tr><th style="width:22%">항목</th><th class="r" style="width:6%">수량</th><th class="r" style="width:12%">단가</th><th class="r" style="width:6%">회수</th><th class="r" style="width:14%">연간 합계</th><th style="width:20%">비고</th><th class="c" style="width:7%">구분</th><th class="c" style="width:13%"></th></tr></thead><tbody>`;
       group.items.forEach((it, iI) => {
         const ed = editingId === it.id;
         if (ed) {
-          h += `<tr class="editing">
-            <td><input class="inp" style="width:100%" value="${esc(it.name)}" onchange="upItem(${gI},${iI},'name',this.value)"></td>
-            <td><input class="inp" type="number" style="width:60px;text-align:right" value="${it.qty}" onchange="upItem(${gI},${iI},'qty',this.value)"></td>
-            <td><input class="inp" type="number" style="width:110px;text-align:right" value="${it.unit}" onchange="upItem(${gI},${iI},'unit',this.value)"></td>
-            <td><input class="inp" type="number" style="width:50px;text-align:right" value="${it.freq}" onchange="upItem(${gI},${iI},'freq',this.value)"></td>
-            <td class="r fw">${fmt(it.total)}</td>
-            <td><input class="inp" style="width:100%" value="${esc(it.note)}" onchange="upItem(${gI},${iI},'note',this.value)"></td>
-            <td class="c"><select class="inp" style="width:70px" onchange="upItem(${gI},${iI},'status',this.value)">
-              ${["확정","보완","신규"].map(s=>`<option ${it.status===s?'selected':''}>${s}</option>`).join("")}
-            </select></td>
-            <td class="c" style="white-space:nowrap">
-              <button class="btn-sm blue" onclick="setEdit(null)">완료</button>
-              <button class="btn-sm red" onclick="delItem(${gI},${iI})" style="margin-left:4px">삭제</button>
-            </td></tr>`;
+          h += `<tr class="editing"><td><input class="inp" style="width:100%" value="${esc(it.name)}" onchange="upItem(${gI},${iI},'name',this.value)"></td><td><input class="inp" type="number" style="width:60px;text-align:right" value="${it.qty}" onchange="upItem(${gI},${iI},'qty',this.value)"></td><td><input class="inp" type="number" style="width:110px;text-align:right" value="${it.unit}" onchange="upItem(${gI},${iI},'unit',this.value)"></td><td><input class="inp" type="number" style="width:50px;text-align:right" value="${it.freq}" onchange="upItem(${gI},${iI},'freq',this.value)"></td><td class="r fw">${fmt(it.total)}</td><td><input class="inp" style="width:100%" value="${esc(it.note)}" onchange="upItem(${gI},${iI},'note',this.value)"></td><td class="c"><select class="inp" style="width:70px" onchange="upItem(${gI},${iI},'status',this.value)">${["확정","보완","신규"].map(s=>`<option ${it.status===s?'selected':''}>${s}</option>`).join("")}</select></td><td class="c" style="white-space:nowrap"><button class="btn-sm blue" onclick="setEdit(null)">완료</button> <button class="btn-sm red" onclick="delItem(${gI},${iI})">삭제</button></td></tr>`;
         } else {
-          h += `<tr>
-            <td>${esc(it.name)}</td><td class="r">${it.qty}</td>
-            <td class="r">${fmt(it.unit)}</td><td class="r">${it.freq}</td>
-            <td class="r fw">${fmt(it.total)}</td>
-            <td style="color:var(--muted);font-size:12px">${esc(it.note)}</td>
-            <td class="c"><span class="badge badge-${it.status}">${it.status}</span></td>
-            <td class="c"><button class="btn-sm" onclick="setEdit('${it.id}')">수정</button></td>
-          </tr>`;
+          h += `<tr><td>${esc(it.name)}</td><td class="r">${it.qty}</td><td class="r">${fmt(it.unit)}</td><td class="r">${it.freq}</td><td class="r fw">${fmt(it.total)}</td><td style="color:var(--muted);font-size:12px">${esc(it.note)}</td><td class="c"><span class="badge badge-${it.status}">${it.status}</span></td><td class="c"><button class="btn-sm" onclick="setEdit('${it.id}')">수정</button></td></tr>`;
         }
       });
       h += `</tbody></table>`;
-
       if (addingAt === fIdx) {
-        h += `<div class="add-row">
-          <input class="inp" placeholder="항목명" id="ni-name" style="width:150px">
-          <input class="inp" type="number" placeholder="수량" id="ni-qty" value="1" style="width:60px">
-          <input class="inp" type="number" placeholder="단가" id="ni-unit" value="0" style="width:110px">
-          <input class="inp" type="number" placeholder="회수" id="ni-freq" value="1" style="width:50px">
-          <input class="inp" placeholder="비고" id="ni-note" style="width:140px">
-          <select class="inp" id="ni-status" style="width:70px"><option>확정</option><option selected>보완</option><option>신규</option></select>
-          <button class="btn-sm blue" onclick="addItem(${gI})">추가</button>
-          <button class="btn-sm" onclick="setAdding(null)">취소</button>
-        </div>`;
+        h += `<div class="add-row"><input class="inp" placeholder="항목명" id="ni-name" style="width:150px"><input class="inp" type="number" placeholder="수량" id="ni-qty" value="1" style="width:60px"><input class="inp" type="number" placeholder="단가" id="ni-unit" value="0" style="width:110px"><input class="inp" type="number" placeholder="회수" id="ni-freq" value="1" style="width:50px"><input class="inp" placeholder="비고" id="ni-note" style="width:140px"><select class="inp" id="ni-status" style="width:70px"><option>확정</option><option selected>보완</option><option>신규</option></select><button class="btn-sm blue" onclick="addItem(${gI})">추가</button><button class="btn-sm" onclick="setAdding(null)">취소</button></div>`;
       } else {
         h += `<div class="add-bar"><button class="btn-sm" onclick="setAdding(${fIdx})">+ 항목 추가</button></div>`;
       }
@@ -411,238 +367,96 @@ function render() {
     h += `</div>`;
   });
 
-  // Add group button
-  h += `<div style="margin:12px 0 20px">
-    <div class="add-grp" id="add-grp-form" style="display:none">
-      <select class="inp" id="ng-acc" style="width:160px">${ACCOUNTS.map(a=>`<option>${a}</option>`).join("")}</select>
-      <input class="inp" placeholder="카테고리명" id="ng-cat" style="width:200px">
-      <button class="btn-sm blue" onclick="addGroup()">그룹 추가</button>
-      <button class="btn-sm" onclick="hideAddGroup()">취소</button>
-    </div>
-    <button class="add-grp-btn" id="add-grp-btn" onclick="showAddGroup()">+ 새 카테고리 그룹 추가</button>
-  </div>`;
+  // Add group
+  h += `<div style="margin:12px 0 20px"><div class="add-grp" id="add-grp-form" style="display:none"><select class="inp" id="ng-acc" style="width:160px">${ACCOUNTS.map(a=>`<option>${a}</option>`).join("")}</select><input class="inp" placeholder="카테고리명" id="ng-cat" style="width:200px"><button class="btn-sm blue" onclick="addGroup()">그룹 추가</button><button class="btn-sm" onclick="hideAddGroup()">취소</button></div><button class="add-grp-btn" id="add-grp-btn" onclick="showAddGroup()">+ 새 카테고리 그룹 추가</button></div>`;
 
   // Grand total
   h += `<div class="grand">`;
-  [{l:"확정 항목 소계",v:sumBy("확정"),c:"#334155"},{l:"보완 항목 소계",v:sumBy("보완"),c:"#b45309"},{l:"신규 추가 소계",v:sumBy("신규"),c:"#166534"}].forEach(r => {
+  [{l:"확정 항목 소계",v:sumBy("확정"),c:"#334155"},{l:"보완 항목 소계",v:sumBy("보완"),c:"#b45309"},{l:"신규 추가 소계",v:sumBy("신규"),c:"#166534"}].forEach(r=>{
     h += `<div class="row"><span class="l">${r.l}</span><span class="v" style="color:${r.c}">${fmt(r.v)}</span></div>`;
   });
   h += `<div class="total-row"><span class="l">연간 총 예산(안)</span><span class="v">${fmt(sumBy("all"))}</span></div></div>`;
-
-  h += `<div class="footer">
-    ※ K-GAAP 일반기업회계기준 판관비 계정과목 매핑 · 감가상각비는 취득 후 내용연수 조정 · 환율 $1=₩1,510<br>
-    ※ 인건비·임대료·회계/세무 미포함 · 보완/신규 항목은 추정치 · 데이터는 브라우저에 자동 저장됩니다
-  </div>`;
-
+  h += `<div class="footer">※ K-GAAP 판관비 계정과목 매핑 · 환율 $1=₩1,510 · 인건비/임대료/회계 미포함 · 보완/신규는 추정치</div>`;
   document.getElementById("app").innerHTML = h;
 }
 
-function esc(s) { return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;"); }
-
-// ═══════════════════════════════════════════════════
+// ═══════════════════════════════════════
 // ACTIONS
-// ═══════════════════════════════════════════════════
+// ═══════════════════════════════════════
+function markChanged() { hasLocalChanges = true; saveLocal(); }
 function setFilter(v) { filter=v; render(); }
 function toggleGroup(i) { collapsed[i]=!collapsed[i]; render(); }
 function setEdit(id) { editingId=id; render(); }
 function setAdding(i) { addingAt=i; render(); }
 
 function upItem(gI,iI,k,v) {
-  data[gI].items[iI][k] = v;
-  if (["qty","unit","freq"].includes(k)) {
-    const it = data[gI].items[iI];
-    it.total = Number(it.qty)*Number(it.unit)*Number(it.freq);
-  }
-  saveData(); render();
+  data[gI].items[iI][k]=v;
+  if(["qty","unit","freq"].includes(k)){const it=data[gI].items[iI];it.total=Number(it.qty)*Number(it.unit)*Number(it.freq);}
+  markChanged(); render();
 }
-
 function delItem(gI,iI) {
   data[gI].items.splice(iI,1);
-  if (data[gI].items.length===0) data.splice(gI,1);
-  editingId=null; saveData(); render();
-  toast("항목이 삭제되었습니다");
+  if(data[gI].items.length===0) data.splice(gI,1);
+  editingId=null; markChanged(); render(); toast("항목 삭제됨");
 }
-
 function addItem(gI) {
-  const name = document.getElementById("ni-name").value.trim();
-  if (!name) { toast("항목명을 입력하세요"); return; }
-  const qty = Number(document.getElementById("ni-qty").value)||1;
-  const unit = Number(document.getElementById("ni-unit").value)||0;
-  const freq = Number(document.getElementById("ni-freq").value)||1;
-  const note = document.getElementById("ni-note").value;
-  const status = document.getElementById("ni-status").value;
-  data[gI].items.push({ id:"z"+(nid++), name, qty, unit, freq, total:qty*unit*freq, note, status });
-  addingAt=null; saveData(); render();
-  toast("항목이 추가되었습니다");
+  const name=document.getElementById("ni-name").value.trim();
+  if(!name){toast("항목명을 입력하세요");return;}
+  const qty=Number(document.getElementById("ni-qty").value)||1;
+  const unit=Number(document.getElementById("ni-unit").value)||0;
+  const freq=Number(document.getElementById("ni-freq").value)||1;
+  data[gI].items.push({id:"z"+(nid++),name,qty,unit,freq,total:qty*unit*freq,note:document.getElementById("ni-note").value,status:document.getElementById("ni-status").value});
+  addingAt=null; markChanged(); render(); toast("항목 추가됨");
 }
-
 function delGroup(gI) {
-  if (!confirm(`"${data[gI].category}" 그룹 전체를 삭제하시겠습니까?`)) return;
-  data.splice(gI,1); saveData(); render();
-  toast("그룹이 삭제되었습니다");
+  if(!confirm(`"${data[gI].category}" 삭제?`))return;
+  data.splice(gI,1); markChanged(); render(); toast("그룹 삭제됨");
+}
+function showAddGroup(){document.getElementById("add-grp-form").style.display="flex";document.getElementById("add-grp-btn").style.display="none";}
+function hideAddGroup(){document.getElementById("add-grp-form").style.display="none";document.getElementById("add-grp-btn").style.display="block";}
+function addGroup(){
+  const cat=document.getElementById("ng-cat").value.trim();
+  if(!cat){toast("카테고리명 입력");return;}
+  data.push({account:document.getElementById("ng-acc").value,category:cat,items:[]});
+  markChanged(); hideAddGroup(); render(); toast("그룹 추가됨");
+}
+function resetData(){
+  if(!confirm("초기화?"))return;
+  data=JSON.parse(JSON.stringify(DEFAULT_DATA)); hasLocalChanges=false;
+  localStorage.removeItem(STORAGE_KEY); render(); toast("초기화 완료");
 }
 
-function showAddGroup() {
-  document.getElementById("add-grp-form").style.display="flex";
-  document.getElementById("add-grp-btn").style.display="none";
-}
-function hideAddGroup() {
-  document.getElementById("add-grp-form").style.display="none";
-  document.getElementById("add-grp-btn").style.display="block";
-}
-function addGroup() {
-  const acc = document.getElementById("ng-acc").value;
-  const cat = document.getElementById("ng-cat").value.trim();
-  if (!cat) { toast("카테고리명을 입력하세요"); return; }
-  data.push({ account:acc, category:cat, items:[] });
-  saveData(); hideAddGroup(); render();
-  toast("그룹이 추가되었습니다");
-}
-
-function resetData() {
-  if (!confirm("모든 수정사항을 초기화하시겠습니까?")) return;
-  data = JSON.parse(JSON.stringify(INIT_DATA));
-  saveData(); render();
-  toast("초기 데이터로 복원되었습니다");
-}
-
-// ═══════════════════════════════════════════════════
+// ═══════════════════════════════════════
 // EXCEL EXPORT
-// ═══════════════════════════════════════════════════
+// ═══════════════════════════════════════
 function exportExcel() {
-  const wb = XLSX.utils.book_new();
-  const rows = [];
-  data.forEach(g => {
-    g.items.forEach(it => {
-      rows.push({
-        "계정코드": ACCOUNT_MAP[g.account]?.code||"",
-        "계정과목": g.account, "카테고리": g.category,
-        "항목명": it.name, "수량": Number(it.qty), "단가": Number(it.unit),
-        "회수(연)": Number(it.freq), "연간합계": Number(it.total),
-        "비고": it.note, "구분": it.status,
-      });
-    });
-    rows.push({"계정코드":"","계정과목":"","카테고리":g.category+" 소계","항목명":"","수량":"","단가":"","회수(연)":"","연간합계":g.items.reduce((a,i)=>a+Number(i.total),0),"비고":"","구분":""});
-  });
+  const wb=XLSX.utils.book_new(); const rows=[];
+  data.forEach(g=>{g.items.forEach(it=>{rows.push({"계정코드":ACCOUNT_MAP[g.account]?.code||"","계정과목":g.account,"카테고리":g.category,"항목명":it.name,"수량":Number(it.qty),"단가":Number(it.unit),"회수(연)":Number(it.freq),"연간합계":Number(it.total),"비고":it.note,"구분":it.status});});rows.push({"계정코드":"","계정과목":"","카테고리":g.category+" 소계","항목명":"","수량":"","단가":"","회수(연)":"","연간합계":g.items.reduce((a,i)=>a+Number(i.total),0),"비고":"","구분":""});});
   rows.push({"계정코드":"","계정과목":"","카테고리":"총 합계","항목명":"","수량":"","단가":"","회수(연)":"","연간합계":sumBy("all"),"비고":"","구분":""});
-
-  const ws = XLSX.utils.json_to_sheet(rows);
+  const ws=XLSX.utils.json_to_sheet(rows);
   ws["!cols"]=[{wch:10},{wch:14},{wch:28},{wch:26},{wch:8},{wch:14},{wch:8},{wch:16},{wch:26},{wch:8}];
-  XLSX.utils.book_append_sheet(wb, ws, "예산 상세");
-
-  // 계정과목 요약
-  const byAcc={};
-  data.forEach(g=>{if(!byAcc[g.account])byAcc[g.account]=0;g.items.forEach(i=>{byAcc[g.account]+=Number(i.total);});});
-  const sr = Object.entries(byAcc).sort((a,b)=>b[1]-a[1]).map(([a,t])=>({"계정코드":ACCOUNT_MAP[a]?.code||"","계정과목":a,"연간합계":t}));
-  sr.push({"계정코드":"","계정과목":"총 합계","연간합계":sumBy("all")});
-  XLSX.utils.book_append_sheet(wb, XLSX.utils.json_to_sheet(sr), "계정과목 요약");
-
-  XLSX.writeFile(wb, "기술연구소_연간예산_2026.xlsx");
-  toast("Excel 파일이 다운로드되었습니다");
+  XLSX.utils.book_append_sheet(wb,ws,"예산 상세");
+  XLSX.writeFile(wb,"기술연구소_연간예산_2026.xlsx");
+  toast("Excel 다운로드 완료");
 }
 
-// ═══════════════════════════════════════════════════
-// EXCEL IMPORT
-// ═══════════════════════════════════════════════════
-function importExcel() {
-  const inp = document.createElement("input");
-  inp.type="file"; inp.accept=".xlsx,.xls";
-  inp.onchange = e => {
-    const file = e.target.files[0];
-    if (!file) return;
-    const reader = new FileReader();
-    reader.onload = ev => {
-      try {
-        const wb = XLSX.read(ev.target.result, {type:"array"});
-        const ws = wb.Sheets[wb.SheetNames[0]];
-        const rows = XLSX.utils.sheet_to_json(ws);
-
-        const newData = [];
-        const groupMap = {};
-        rows.forEach(r => {
-          if (!r["항목명"] || !r["카테고리"]) return;
-          if (r["카테고리"].includes("소계") || r["카테고리"].includes("합계")) return;
-          const key = (r["계정과목"]||"잡비") + "|||" + r["카테고리"];
-          if (!groupMap[key]) {
-            groupMap[key] = { account: r["계정과목"]||"잡비", category: r["카테고리"], items:[] };
-            newData.push(groupMap[key]);
-          }
-          groupMap[key].items.push({
-            id: "imp"+(nid++),
-            name: r["항목명"],
-            qty: Number(r["수량"])||1,
-            unit: Number(r["단가"])||0,
-            freq: Number(r["회수(연)"])||1,
-            total: Number(r["연간합계"])||0,
-            note: r["비고"]||"",
-            status: r["구분"]||"보완",
-          });
-        });
-
-        if (newData.length === 0) { toast("유효한 데이터가 없습니다"); return; }
-        if (!confirm(`${newData.length}개 그룹, ${rows.filter(r=>r["항목명"]).length}개 항목을 가져옵니다.\n기존 데이터를 대체하시겠습니까?`)) return;
-        data = newData;
-        saveData(); render();
-        toast("Excel 데이터를 성공적으로 가져왔습니다");
-      } catch(err) { toast("파일 읽기 실패: "+err.message); }
-    };
-    reader.readAsArrayBuffer(file);
-  };
-  inp.click();
-}
-
-// ═══════════════════════════════════════════════════
+// ═══════════════════════════════════════
 // PDF EXPORT
-// ═══════════════════════════════════════════════════
+// ═══════════════════════════════════════
 function exportPDF() {
-  const w = window.open("","_blank");
-  let h = `<!DOCTYPE html><html><head><meta charset="utf-8"><title>기술연구소 연간 운영 예산(안)</title>
-  <style>
-    @page{size:A4 landscape;margin:12mm}*{box-sizing:border-box;margin:0;padding:0}
-    body{font-family:'Malgun Gothic','맑은 고딕',sans-serif;font-size:9.5pt;color:#222;line-height:1.5}
-    h1{font-size:16pt;margin-bottom:2px}.sub{color:#666;font-size:8.5pt;margin-bottom:12px}
-    .sb{display:flex;gap:16px;margin-bottom:14px}.sx{border:1px solid #ccc;border-radius:6px;padding:8px 14px;min-width:140px}
-    .sx .l{font-size:8pt;color:#666}.sx .v{font-size:13pt;font-weight:700}
-    table{width:100%;border-collapse:collapse;margin-bottom:8px}
-    th{background:#f5f5f5;font-weight:700;font-size:8.5pt}th,td{border:1px solid #ddd;padding:4px 8px}
-    .r{text-align:right}.c{text-align:center}.cat{background:#f0f0f0;font-weight:700}
-    .st{background:#fafafa;font-weight:600}.gt{background:#e8e8e8;font-weight:700;font-size:10.5pt}
-    .b{padding:1px 6px;border-radius:10px;font-size:8pt;font-weight:600}
-    .b1{background:#dbeafe;color:#1e40af}.b2{background:#fef3c7;color:#92400e}.b3{background:#dcfce7;color:#166534}
-    .ft{margin-top:10px;font-size:7.5pt;color:#999}
-  </style></head><body>
-  <h1>기술연구소 연간 운영 예산(안)</h1>
-  <div class="sub">11인 기준 · K-GAAP 계정과목 매핑 · 인건비/임대료/회계 제외 · 2026년 · 작성일: ${new Date().toLocaleDateString("ko-KR")}</div>
-  <div class="sb">
-    <div class="sx"><div class="l">확정</div><div class="v">${fmt(sumBy("확정"))}</div></div>
-    <div class="sx"><div class="l">보완</div><div class="v" style="color:#b45309">${fmt(sumBy("보완"))}</div></div>
-    <div class="sx"><div class="l">신규</div><div class="v" style="color:#166534">${fmt(sumBy("신규"))}</div></div>
-    <div class="sx"><div class="l">총 예산(안)</div><div class="v">${fmt(sumBy("all"))}</div></div>
-  </div>
-  <table><thead><tr><th style="width:8%">계정코드</th><th style="width:10%">계정과목</th><th style="width:18%">카테고리/항목</th><th class="r" style="width:6%">수량</th><th class="r" style="width:10%">단가</th><th class="r" style="width:5%">회수</th><th class="r" style="width:13%">연간합계</th><th style="width:22%">비고</th><th class="c" style="width:6%">구분</th></tr></thead><tbody>`;
-
-  data.forEach(g => {
-    const ac = ACCOUNT_MAP[g.account]||{code:""};
-    const gt = g.items.reduce((a,i)=>a+Number(i.total),0);
-    h += `<tr class="cat"><td>${ac.code}</td><td>${g.account}</td><td colspan="5">${esc(g.category)}</td><td></td><td></td></tr>`;
-    g.items.forEach(it => {
-      const bc = it.status==="확정"?"b1":it.status==="보완"?"b2":"b3";
-      h += `<tr><td></td><td></td><td>${esc(it.name)}</td><td class="r">${it.qty}</td><td class="r">${fmt(it.unit)}</td><td class="r">${it.freq}</td><td class="r">${fmt(it.total)}</td><td style="font-size:8.5pt;color:#666">${esc(it.note)}</td><td class="c"><span class="b ${bc}">${it.status}</span></td></tr>`;
-    });
-    h += `<tr class="st"><td></td><td></td><td>${esc(g.category)} 소계</td><td></td><td></td><td></td><td class="r">${fmt(gt)}</td><td></td><td></td></tr>`;
-  });
-  h += `<tr class="gt"><td></td><td></td><td>총 합계</td><td></td><td></td><td></td><td class="r">${fmt(sumBy("all"))}</td><td></td><td></td></tr></tbody></table>`;
-  h += `<div class="ft">※ K-GAAP 판관비 계정과목 매핑 · 환율 $1=₩1,510 · 인건비/임대료/회계 미포함 · 보완/신규는 추정치</div></body></html>`;
-
-  w.document.write(h);
-  w.document.close();
-  setTimeout(()=>w.print(), 500);
+  const w=window.open("","_blank");
+  let h=`<!DOCTYPE html><html><head><meta charset="utf-8"><title>예산</title><style>@page{size:A4 landscape;margin:12mm}*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Malgun Gothic',sans-serif;font-size:9.5pt;color:#222;line-height:1.5}h1{font-size:16pt;margin-bottom:2px}.sub{color:#666;font-size:8.5pt;margin-bottom:12px}.sb{display:flex;gap:16px;margin-bottom:14px}.sx{border:1px solid #ccc;border-radius:6px;padding:8px 14px;min-width:140px}.sx .l{font-size:8pt;color:#666}.sx .v{font-size:13pt;font-weight:700}table{width:100%;border-collapse:collapse;margin-bottom:8px}th{background:#f5f5f5;font-weight:700;font-size:8.5pt}th,td{border:1px solid #ddd;padding:4px 8px}.r{text-align:right}.c{text-align:center}.cat{background:#f0f0f0;font-weight:700}.st{background:#fafafa;font-weight:600}.gt{background:#e8e8e8;font-weight:700;font-size:10.5pt}.b{padding:1px 6px;border-radius:10px;font-size:8pt;font-weight:600}.b1{background:#dbeafe;color:#1e40af}.b2{background:#fef3c7;color:#92400e}.b3{background:#dcfce7;color:#166534}.ft{margin-top:10px;font-size:7.5pt;color:#999}</style></head><body>`;
+  h+=`<h1>기술연구소 연간 운영 예산(안)</h1><div class="sub">11인 기준 · ${new Date().toLocaleDateString("ko-KR")}</div>`;
+  h+=`<div class="sb"><div class="sx"><div class="l">확정</div><div class="v">${fmt(sumBy("확정"))}</div></div><div class="sx"><div class="l">보완</div><div class="v" style="color:#b45309">${fmt(sumBy("보완"))}</div></div><div class="sx"><div class="l">신규</div><div class="v" style="color:#166534">${fmt(sumBy("신규"))}</div></div><div class="sx"><div class="l">총 예산</div><div class="v">${fmt(sumBy("all"))}</div></div></div>`;
+  h+=`<table><thead><tr><th style="width:8%">코드</th><th style="width:10%">계정과목</th><th style="width:18%">항목</th><th class="r" style="width:6%">수량</th><th class="r" style="width:10%">단가</th><th class="r" style="width:5%">회수</th><th class="r" style="width:13%">합계</th><th style="width:22%">비고</th><th class="c" style="width:6%">구분</th></tr></thead><tbody>`;
+  data.forEach(g=>{const ac=ACCOUNT_MAP[g.account]||{code:""};const gt=g.items.reduce((a,i)=>a+Number(i.total),0);h+=`<tr class="cat"><td>${ac.code}</td><td>${g.account}</td><td colspan="5">${esc(g.category)}</td><td></td><td></td></tr>`;g.items.forEach(it=>{const bc=it.status==="확정"?"b1":it.status==="보완"?"b2":"b3";h+=`<tr><td></td><td></td><td>${esc(it.name)}</td><td class="r">${it.qty}</td><td class="r">${fmt(it.unit)}</td><td class="r">${it.freq}</td><td class="r">${fmt(it.total)}</td><td style="font-size:8.5pt;color:#666">${esc(it.note)}</td><td class="c"><span class="b ${bc}">${it.status}</span></td></tr>`;});h+=`<tr class="st"><td></td><td></td><td>소계</td><td></td><td></td><td></td><td class="r">${fmt(gt)}</td><td></td><td></td></tr>`;});
+  h+=`<tr class="gt"><td></td><td></td><td>총 합계</td><td></td><td></td><td></td><td class="r">${fmt(sumBy("all"))}</td><td></td><td></td></tr></tbody></table>`;
+  h+=`<div class="ft">※ K-GAAP 판관비 매핑 · 환율 $1=₩1,510 · 인건비/임대료/회계 미포함</div></body></html>`;
+  w.document.write(h); w.document.close(); setTimeout(()=>w.print(),500);
 }
 
-// ═══════════════════════════════════════════════════
 // INIT
-// ═══════════════════════════════════════════════════
-render();
+init();
 </script>
 </body>
 </html>
