@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-01T21:14:48.473Z",
+  "updated": "2026-04-02T17:00:37.899Z",
   "editor": "budget-editor",
   "data": [
     {
@@ -54,6 +54,16 @@
           "freq": 12,
           "total": 21925200,
           "note": "11인 ($110/인/월)",
+          "status": "확정"
+        },
+        {
+          "id": "z9000",
+          "name": "Wispr Flow (Pro)",
+          "qty": 2,
+          "unit": "18120",
+          "freq": 12,
+          "total": 434880,
+          "note": "2인($12/인/월)",
           "status": "확정"
         }
       ]
